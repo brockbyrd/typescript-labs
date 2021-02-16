@@ -47,3 +47,8 @@ if (hasName(myVariable)) {
 var multiType;
 multiType = 20;
 multiType = true;
+function add(num1, num2) {
+    return num1 + num2;
+}
+add(5, 10);
+add(5, '10');

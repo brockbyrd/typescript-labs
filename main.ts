@@ -74,8 +74,8 @@ add(5, 10);
 add(5);
 
 interface Person {
-    firstName: string;
-    lastName: string;
+    firstName?: string;
+    lastName?: string;
 }
 
 // function fullName(person: {firstName: string, lastName: string}) {

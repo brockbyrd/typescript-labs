@@ -2,3 +2,12 @@
 exports.__esModule = true;
 var message = "Welcome Back!";
 console.log(message);
+var x = 10;
+var y = 20;
+var sum;
+var title = "Const must be initialized, let does not have to be initialized";
+var isBeginner = true;
+var total = 0;
+var name = "Brock";
+var sentence = "My name is " + name + " I am a beginner in TypeScript.";
+console.log(sentence);

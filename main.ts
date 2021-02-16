@@ -40,12 +40,12 @@ randomValue = 'Brock';
 
 let myVariable: any = 10;
 
-console.log(myVariable.name);
-myVariable();
-myVariable.toUpperCase();
+// console.log(myVariable.name);
+// myVariable();
+// myVariable.toUpperCase();
 
 let myVariable2: unknown = 10;
-(myVariable2 as string).toUpperCase();
+// (myVariable2 as string).toUpperCase();
 
 
 function hasName(obj: any): obj is { name: string }{
@@ -93,3 +93,31 @@ let p = {
 
 fullName(p);
 
+class Employee {
+    employeeName: string;
+
+    constructor(name: string){
+        this.employeeName = name;
+    }
+
+    greet(){
+        console.log(`Good Morning ${this.employeeName}`)
+    }
+}
+let emp1 = new Employee("Brock");
+console.log(emp1.employeeName);
+emp1.greet();
+
+class Manager extends Employee {
+    constructor(managerName: string){
+        super(managerName);
+    }
+    delegateWork(){
+        console.log(`Manager delegating tasks`)
+    }
+}
+
+let m1 = new Manager("Alex");
+m1.delegateWork();
+m1.greet();
+console.log(m1.employeeName);

@@ -44,3 +44,6 @@ function hasName(obj) {
 if (hasName(myVariable)) {
     console.log(myVariable.name);
 }
+var multiType;
+multiType = 20;
+multiType = true;

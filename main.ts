@@ -57,3 +57,8 @@ function hasName(obj: any): obj is { name: string }{
 if (hasName(myVariable)) {
     console.log(myVariable.name);
 }
+
+let multiType: number | boolean;
+multiType = 20;
+multiType = true;
+

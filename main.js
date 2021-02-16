@@ -82,6 +82,7 @@ var p = {
 };
 fullName(p);
 var Employee = /** @class */ (function () {
+    // public employeeName: string; makes employeeName free
     function Employee(name) {
         this.employeeName = name;
     }

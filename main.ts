@@ -94,7 +94,10 @@ let p = {
 fullName(p);
 
 class Employee {
+    // private employeeName: string; makes employeeName private making it only accessible to direct class
+    // protected employeeName: string; makes employeeName private making it only accessible to direct and derived classes
     employeeName: string;
+    // public employeeName: string; makes employeeName free
 
     constructor(name: string){
         this.employeeName = name;
@@ -109,9 +112,11 @@ console.log(emp1.employeeName);
 emp1.greet();
 
 class Manager extends Employee {
+
     constructor(managerName: string){
         super(managerName);
     }
+
     delegateWork(){
         console.log(`Manager delegating tasks`)
     }

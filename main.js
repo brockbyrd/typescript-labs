@@ -57,3 +57,14 @@ function add(num1, num2) {
 add(5, 10);
 // add(5, '10'); cannot accept string as argument
 add(5);
+// function fullName(person: {firstName: string, lastName: string}) {
+//     console.log(`${person.firstName} ${person.lastName}`)
+// }
+function fullName(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+var p = {
+    firstName: "John",
+    lastName: "Wayne"
+};
+fullName(p);

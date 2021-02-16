@@ -44,3 +44,6 @@ console.log(myVariable.name);
 myVariable();
 myVariable.toUpperCase();
 
+let myVariable2: unknown = 10;
+
+(myVariable2 as string).toUpperCase();

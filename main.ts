@@ -1,1 +1,2 @@
-//creates main.ts file for git push
+let message = "Hello World!";
+console.log(message);
